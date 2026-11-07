@@ -1,0 +1,63 @@
+Here’s one woven roadmap. It assumes roughly 15–20 hours a week, which gets you job-ready in about 9–12 months. Faster is possible with more hours, but the real bottleneck is building projects, not watching lectures.
+
+Principle that keeps it short: don’t finish one field before starting the next. From Phase 1 onward you’ll build one project that grows through every phase: data → model → deployed service → monitored → LLM-powered.
+
+Phase 0: Python and tooling (weeks 1–4)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Python: CS50P (Harvard, free) or Kaggle’s “Python” and “Pandas” micro-courses. Then Automate the Boring Stuff (free online) for practical fluency.
+Tooling you’ll use forever: Git/GitHub, the terminal, virtual environments (uv or venv), Jupyter, VS Code.
+SQL: Mode’s SQL tutorial or SQLBolt. Data scientists use SQL daily.
+Math, just enough: 3Blue1Brown’s Essence of Linear Algebra and Essence of Calculus, plus StatQuest (Josh Starmer) for statistics. Don’t study math in isolation; revisit it when a concept confuses you.
+
+
+Phase 1: Data science foundations (weeks 5–10)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NumPy, pandas, Matplotlib/Seaborn via Kaggle Learn (Data Cleaning, Data Visualization, Feature Engineering).
+Statistics for DS: StatQuest playlists, then Think Stats (Allen Downey, free PDF).
+Practice: do 2–3 Kaggle datasets end to end (EDA, cleaning, a written insight summary). Publish notebooks on GitHub.
+
+Phase 2: Classical machine learning (weeks 11–18)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Core course: Andrew Ng’s Machine Learning Specialization (Coursera audit is free) or fast.ai’s Practical Deep Learning if you prefer top-down learning.
+Hands-on: scikit-learn’s official docs and tutorials; Kaggle’s “Intro/Intermediate ML.”
+Topics: regression, trees, gradient boosting (XGBoost/LightGBM), cross-validation, metrics, overfitting, feature engineering.
+Practice: enter a Kaggle “Getting Started” competition. Your goal is a clean, reproducible pipeline, not a leaderboard rank.
+
+Phase 3: Deep learning and transformers (weeks 19–28)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Andrej Karpathy’s Neural Networks: Zero to Hero (YouTube). It’s among the best free resources for understanding how neural nets, backprop, and GPT work from scratch.
+PyTorch: official tutorials, plus fast.ai Part 1 and Part 2.
+Transformers: Karpathy’s “Let’s build GPT,” Jay Alammar’s The Illustrated Transformer, and the Hugging Face LLM Course (free).
+Practice: fine-tune a small pretrained model (e.g., text classification) with Hugging Face.
+
+Phase 4: MLOps (weeks 29–38)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Core course: DataTalks.Club’s MLOps Zoomcamp (free, project-based) and Made With ML (Goku Mohandas, free).
+Skills: experiment tracking (MLflow or Weights & Biases), data/model versioning (DVC), Docker, FastAPI for serving, CI/CD with GitHub Actions, workflow orchestration (Prefect or Airflow), cloud basics (AWS/GCP free tiers), monitoring and drift detection (Evidently).
+Practice: take your Phase 2 model and deploy it as a containerized API with automated tests, tracked experiments, and a retraining pipeline.
+
+Phase 5: LLMs, RAG and agents (weeks 39–48)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Courses: DeepLearning.AI short courses (free), covering prompt engineering, RAG, agents, evaluation, and fine-tuning. Also the Hugging Face LLM and Agents courses, and DataTalks.Club’s LLM Zoomcamp (RAG-focused).
+Skills:
+RAG: embeddings, chunking, vector databases (Chroma, FAISS, pgvector), hybrid search, reranking.
+Evaluation: building eval sets, LLM-as-judge, retrieval metrics. Many teams skip this, and it’s what separates professionals from hobbyists.
+Fine-tuning: LoRA/QLoRA via Hugging Face PEFT.
+Agents and tool use: function calling, orchestration frameworks (LangChain/LlamaIndex, but learn the raw API first).
+LLMOps: tracing, cost and latency monitoring, guardrails, serving (vLLM).
+Reading: the Anthropic and OpenAI docs and cookbooks (free), plus Chip Huyen’s writing on AI engineering.
+Practice: build a RAG app over a real document set, with an eval suite, deployed using your Phase 4 pipeline.
+
+Phase 6: Proof of expertise (ongoing, overlapping weeks 30+)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Portfolio: 3–4 polished GitHub projects with READMEs: one classical ML, one deep learning, one end-to-end MLOps, one RAG/LLM system.
+Read papers: start with “Attention Is All You Need,” then follow Papers With Code and Sebastian Raschka’s newsletter.
+Community and signal: Kaggle, write short posts about what you build, and contribute to an open-source library.
+Paid optional: a certification like AWS ML Specialty or Google’s Professional ML Engineer is the only place where spending money may help, mainly for hiring filters.
+
+How to compress the timeline
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Project-first: watch a lecture, then immediately apply it. Passive watching feels productive but isn’t.
+Skip what you don’t need yet: you can start Phase 5 early if LLMs are your priority, since the API-level work needs only Python and Phase 1 basics. Then loop back for depth.
+Timebox everything: if a course stalls you for more than two weeks, move on.
+Use AI as a tutor: paste confusing code or concepts into Claude and ask for explanations and review of your projects.
