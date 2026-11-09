@@ -52,7 +52,7 @@ git config --global user.email "you@example.com"
 ```
 mkdir learning-hub
 cd learning-hub
-mkdir notes cheatsheets exercises projects interview-prep
+mkdir notes, cheatsheets, exercises, projects, interview-prep
 ```
 
 ### 5. Create a virtual environment
